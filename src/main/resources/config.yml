@@ -1,0 +1,134 @@
+# ==========================================
+#  ReviveMe Modern Configuration
+#  Dibuat oleh: Nanskieee
+#  Lisensi: MIT
+# ==========================================
+
+# ---------------------------------------------------------
+# PENGATURAN UMUM (GENERAL)
+# ---------------------------------------------------------
+general:
+  # Pilih bahasa: 'en' (Inggris) atau 'id' (Indonesia)
+  # File bahasa ada di folder plugins/ReviveMe/lang/
+  language: 'en'
+
+  # Jumlah nyawa default saat pemain pertama kali bergabung
+  default-lives: 3
+
+# ---------------------------------------------------------
+# PENGATURAN RITUAL (RITUAL)
+# ---------------------------------------------------------
+ritual:
+  # Durasi ritual kebangkitan (dalam detik)
+  duration-seconds: 10
+
+  # Apakah reviver (pemain yang membangkitkan) harus kehilangan 1 nyawa?
+  sacrifice-enabled: true
+
+  # Apakah ritual gagal jika reviver bergerak?
+  fail-on-move: true
+
+  # Apakah ritual gagal jika reviver menerima damage?
+  fail-on-damage: true
+
+  # Cooldown antar ritual per pemain (dalam detik)
+  cooldown-seconds: 60
+
+# ---------------------------------------------------------
+# PENGATURAN EKONOMI (ECONOMY)
+# ---------------------------------------------------------
+economy:
+  # Apakah fitur ekonomi (Vault) diaktifkan?
+  enabled: true
+
+  # Biaya yang harus dibayar pemain untuk melakukan ritual
+  # Set ke 0 jika server tidak menggunakan ekonomi
+  ritual-cost: 5000
+
+# ---------------------------------------------------------
+# PENGATURAN DIMENSI KEMATIAN (DEATH DIMENSION)
+# ---------------------------------------------------------
+death-dimension:
+  # Apakah fitur dimensi kematian diaktifkan?
+  # Jika false, hantu akan tetap berada di dunia asli
+  enabled: true
+
+  # Nama dunia (biarkan default jika tidak yakin)
+  world-name: "death_realm"
+
+  # Waktu di dimensi kematian (0 = Pagi, 6000 = Siang, 12000 = Sore, 18000 = Malam)
+  # Disarankan 18000 agar terasa menyeramkan
+  time: 18000
+
+  # Apakah cuaca di dimensi kematian selalu cerah?
+  disable-weather: true
+
+# ---------------------------------------------------------
+# PENGATURAN VISUAL (VISUAL EFFECTS)
+# ---------------------------------------------------------
+visuals:
+  # Efek partikel di sekitar pemain hantu (Alam Baka)
+  ghost-aura-enabled: true
+
+  # Jenis partikel (CLOUD, END_ROD, SOUL, dll)
+  # Pisahkan dengan koma jika ingin lebih dari satu
+  ghost-particles: "CLOUD, END_ROD"
+  # ---------------------------------------------------------
+  # PENGATURAN TOKO (SHOP)
+  # ---------------------------------------------------------
+shop:
+  items:
+    soul_fragment:
+      material: AMETHYST_SHARD
+      price: 1000.0
+      custom-model-data: 1001
+    soul_altar:
+      material: LODESTONE
+      price: 50000.0
+      custom-model-data: 1003
+    revive_wand:
+      material: BLAZE_ROD
+      price: 15000.0
+      custom-model-data: 1004
+    soul_armor:
+      material: NETHERITE_CHESTPLATE
+      price: 25000.0
+      custom-model-data: 1005
+    soul_bound_book:
+      material: ENCHANTED_BOOK
+      price: 30000.0
+      custom-model-data: 1006
+# ---------------------------------------------------------
+# EVENT BOSS (RITUAL BOSS)
+# ---------------------------------------------------------
+boss-event:
+  # Aktifkan fitur ini?
+  enabled: true
+  # Interval spawn boss (dalam jam)
+  interval-hours: 3
+  # Nama Boss (bisa diganti)
+  boss-name: "<dark_red>Ancient Soul Devourer</dark_red>"
+  # Hadiah uang untuk setiap pemain yang ikut membunuh
+  reward-money: 10000
+# ---------------------------------------------------------
+# INTEGRASI DISCORD (WEBHOOK)
+# ---------------------------------------------------------
+discord:
+  # Aktifkan fitur ini?
+  enabled: false
+  # Masukkan URL Webhook Discord kamu di sini
+  # (Server Settings > Integrations > Webhooks > Copy Webhook URL)
+  webhook-url: "https://discord.com/api/webhooks/123456789/abcdefg"
+  # Kirim pesan saat ada yang berhasil di-revive?
+  notify-revive: true
+  # Kirim pesan saat Boss Event muncul?
+  notify-boss: true
+
+# ---------------------------------------------------------
+# SOUL CURRENCY (MATA UANG JIWA)
+# ---------------------------------------------------------
+soul-currency:
+  # Berapa Soul Coin yang didapat saat berhasil membangkitkan pemain?
+  reward-per-revive: 5
+  # Berapa Soul Coin yang didapat saat membunuh Soul Boss?
+  reward-per-boss: 50

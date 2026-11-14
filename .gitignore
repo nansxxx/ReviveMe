@@ -1,0 +1,18 @@
+# Folder IntelliJ IDEA (Settingan Lokal)
+.idea/
+*.iml
+*.iws
+
+# Folder Build Maven (File .jar besar)
+target/
+
+# File Database (Data server)
+*.db
+*.sqlite
+
+# File System (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# File Log
+*.log

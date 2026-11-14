@@ -1,0 +1,27 @@
+name: ReviveMe
+version: 1.0.0
+main: com.nanskieee.phone.reviveMe.ReviveMe
+api-version: '1.21'
+author: Nanskieee
+description: A hardcore death system with a modern resurrection ritual, death dimension, and RPG elements.
+softdepend: [Vault, PlaceholderAPI]
+
+commands:
+  revive:
+    description: Mencoba membangkitkan pemain hantu di dekatmu.
+    usage: /revive <nama_pemain>
+  reviveme:
+    description: Command utama untuk mengatur dan membuka fitur ReviveMe.
+    usage: |
+      /reviveme givealtar - Mendapatkan Soul Altar
+      /reviveme shop - Membuka Soul Shop (GUI)
+      /reviveme givesoulbound - Memberi efek Soul Bound ke item di tangan
+      /reviveme reload - Reload config & bahasa
+      /reviveme setlives <pemain> <jumlah> - Mengatur nyawa pemain
+    permission: revivemodern.admin
+    aliases: [rm]
+
+permissions:
+  revivemodern.admin:
+    description: Akses penuh ke command admin ReviveMe.
+    default: op
