@@ -1,4 +1,4 @@
-prefix: "<dark_gray>[<dark_red>reviveme</dark_red>]</dark_gray> <gray>»</gray> "
+prefix: "<dark_gray>[<dark_red>ReviveMe</dark_red>]</dark_gray> <gray>»</gray> "
 no-lives: "<red>Nyawamu habis! Kamu sekarang menjadi hantu.</red>"
 ghost-welcome: "<gray>Selamat datang di Alam Baka. Temukan Soul Altar agar temanmu bisa membangkitkanmu.</gray>"
 ritual-start: "<yellow>Ritual kebangkitan dimulai! Jangan bergerak...</yellow>"
@@ -34,3 +34,104 @@ soulbound-applied: "<green>Item berhasil diberikan efek Soul Bound!</green>"
 soulbound-already: "<red>Item ini sudah memiliki efek Soul Bound!</red>"
 soul-trap-success: "<green>Kamu mencuri 1 nyawa dari <victim>!</green>"
 soul-trap-victim: "<red>Jiwamu dicuri oleh Soul Trap milik <owner>!</red>"
+sacrifice-success: "<red>Sebagian nyawamu dikorbankan untuk ritual ini.</red>"
+refund-success: "<green>Uang kamu dikembalikan karena ritual gagal: $<cost></green>"
+not-enough-lives-sacrifice: "<red>Nyawamu tidak cukup untuk melakukan pengorbanan!</red>"
+need-item-in-hand: "<red>Pegang item di tanganmu terlebih dahulu!</red>"
+item-added-to-shop: "<green>Item berhasil ditambahkan ke database toko!</green>"
+edit-feature-coming-soon: "<yellow>Fitur Edit Lore sedang dalam pengembangan!</yellow>"
+soulcoin-pay-success: "<green>Kamu mengirim <amount> Soul Coin ke <target>!</green>"
+soulcoin-received: "<green>Kamu menerima <amount> Soul Coin dari <sender>!</green>"
+not-enough-soulcoins: "<red>Kamu tidak punya cukup Soul Coin!</red>"
+top-header: "<gold>=== Top 10 Soul Coin Holders ===</gold>"
+top-format: "<yellow><rank>. <white><player></white> - <gold><coins> Coins</gold></yellow>"
+admin-revived-player: "<green>Kamu telah membangkitkan <player>!</green>"
+admin-revived-target: "<green>Kamu telah dibangkitkan oleh Admin!</green>"
+# Shop GUI
+shop-title: "<dark_gray>Soul Shop</dark_gray>"
+shop-price: "<gray>Harga: <gold>$<price></gold></gray>"
+shop-click-buy: "<yellow>▶ Klik untuk membeli</yellow>"
+shop-close: "<red>Tutup</red>"
+shop-prev: "<yellow>« Halaman Sebelumnya</yellow>"
+shop-next: "<yellow>Halaman Berikutnya »</yellow>"
+
+# Admin Shop GUI
+adminshop-title: "<dark_red>Admin Shop Manager</dark_red>"
+adminshop-add-name: "<green>+ Tambah Item</green>"
+adminshop-add-lore1: "<gray>Pegang item di tangan, lalu klik ini.</gray>"
+adminshop-add-lore2: "<gray>Harga default: $1000</gray>"
+adminshop-edit-name: "<yellow>✎ Edit Item Toko</yellow>"
+adminshop-edit-lore1: "<gray>Ubah Nama, Lore, dan Harga.</gray>"
+adminshop-edit-lore2: "<gray>Klik untuk melihat list item.</gray>"
+adminshop-preview-name: "<light_purple>👁 Preview Toko</light_purple>"
+adminshop-preview-lore: "<gray>Lihat toko dari sudut pandang pemain.</gray>"
+# ==========================================
+# TERJEMAHAN ITEM (INDONESIA)
+# ==========================================
+item:
+  soul_fragment:
+    name: "<light_purple>Pecahan Jiwa</light_purple>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>Serpihan jiwa yang hilang.</gray>"
+    lore3: "<yellow>Gunakan di Soul Altar untuk membangkitkan.</yellow>"
+
+  soul_head:
+    name: "<dark_purple>Kepala Jiwa</dark_purple>"
+    lore1: "<gray>Terikat pada: <white><player></white></gray>"
+    lore2: "<yellow>Bawa ini ke Altar untuk membangkitkannya.</yellow>"
+
+  soul_altar:
+    name: "<gold>Soul Altar</gold>"
+    lore1: "<gray>Monolit kuno tempat berkumpulnya jiwa.</gray>"
+    lore2: "<yellow>Letakkan di tanah untuk mengaktifkan.</yellow>"
+
+  revive_wand:
+    name: "<light_purple>Tongkat Kebangkitan</light_purple>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>Tongkat yang terbuat dari sihir kuno.</gray>"
+    lore3: "<red>Sekali pakai. Klik kanan ke arah hantu.</red>"
+
+  soul_armor:
+    name: "<dark_purple>Armor Jiwa</dark_purple>"
+    lore1: "<gray>Dibuat dari jiwa yang murni.</gray>"
+    lore2: "<yellow>Memberikan perlindungan ekstra di Alam Baka.</yellow>"
+
+  soul_trap:
+    name: "<dark_red>Perangkap Jiwa</dark_red>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>Perangkap kuno pemakan jiwa.</gray>"
+    lore3: "<red>Mencuri 1 nyawa dari pemain yang mati di dekatnya.</red>"
+
+  soul_bound_book:
+    name: "<light_purple>Buku Ikatan Jiwa</light_purple>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>Gabungkan dengan item di Anvil.</gray>"
+    lore3: "<yellow>Mencegah item hilang saat mati.</yellow>"
+
+  soul_leggings:
+    name: "<dark_purple>Soul Leggings</dark_purple>"
+    lore1: "<gray>Ditempa dari esensi jiwa yang hilang.</gray>"
+    lore2: "<yellow>Memberikan perlindungan di Alam Baka.</yellow>"
+
+  soul_boots:
+    name: "<dark_purple>Soul Boots</dark_purple>"
+    lore1: "<gray>Ditempa dari esensi jiwa yang hilang.</gray>"
+    lore2: "<yellow>Memberikan perlindungan di Alam Baka.</yellow>"
+
+  soul_pickaxe:
+    name: "<dark_purple>Soul Pickaxe</dark_purple>"
+    lore1: "<gray>Bisa menambang area 3x3.</gray>"
+    lore2: "<yellow>Sangat cocok untuk membersihkan area luas.</yellow>"
+
+  soul_sword:
+    name: "<dark_purple>Soul Sword</dark_purple>"
+    lore1: "<gray>Pedang yang haus akan jiwa.</gray>"
+    lore2: "<yellow>Memberikan damage bonus ke undead.</yellow>"
+# Death Animation Titles
+title-death-main: "<dark_red><bold>ANDA TELAH MATI</bold></dark_red>"
+title-death-sub: "<gray>Jiwamu ditarik ke Alam Baka...</gray>"
+title-revive-main: "<green><bold>KAMU HIDUP LAGI</bold></green>"
+title-revive-sub: "<gray>Kembali ke dunia orang hidup.</gray>"
+ghost-time-left: "<red>Waktu tersisa: <yellow><time> detik</yellow> sebelum jiwamu hilang!</red>"
+ghost-time-out: "<dark_red>Jiwamu telah hilang dari Alam Baka! Kamu gagal dibangkitkan.</dark_red>"
+ghost-cant-teleport: "<red>Sebagai hantu, kamu tidak bisa menggunakan teleportasi!</red>"
