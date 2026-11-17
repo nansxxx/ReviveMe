@@ -1,78 +1,106 @@
+<div align="center">
+  
 # 💀 ReviveMe Modern
 
+**Don't just respawn. Fight for your soul.**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.4-green.svg)](https://papermc.io/)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.4+-green.svg)](https://papermc.io/)
 [![Java](https://img.shields.io/badge/Java-21-orange.svg)](https://adoptium.net/)
+[![SpigotMC](https://img.shields.io/badge/SpigotMC-Available-blue.svg)](#)
 
-**ReviveMe Modern** adalah plugin *hardcore death system* yang mengubah cara pemain berinteraksi dengan kematian. Saat nyawa habis, pemain tidak mati biasa—jiwa mereka ditarik ke **Alam Baka (Death Dimension)**, dan teman-teman mereka harus melakukan **Ritual Kebangkitan** yang sinematik untuk membawa mereka kembali.
+A next-generation hardcore death system featuring cinematic resurrection rituals, custom death dimensions, and deep RPG mechanics. Built for SMP, Anarchy, and Hardcore servers.
 
-Plugin ini sangat cocok untuk server **SMP, Anarchy, Hardcore, dan RPG**.
-
----
-
-## ✨ Fitur Utama
-
-*   💀 **Sistem Nyawa & Ghost Mode**: Pemain memiliki batas nyawa. Jika habis, mereka menjadi hantu (Spectator) dan terlempar ke dimensi khusus.
-*   ⚡ **Ritual Kebangkitan Sinematik**: Pemain lain harus melakukan ritual di *Soul Altar* menggunakan *Soul Head* dari mayat. Dilengkapi animasi Boss Bar, detak jantung, dan petir.
-*   🌌 **Death Dimension (Alam Baka)**: Dimensi kosong melayang yang dibuat **secara otomatis** oleh plugin (tanpa butuh Multiverse). Suasananya gelap, penuh partikel jiwa, dan mencekam.
-*   🛒 **Soul Shop (GUI Berhalaman)**: Toko untuk membeli *Soul Fragment*, *Revive Wand*, *Soul Armor*, dan *Soul Bound Book*. Desain GUI modern dan rapi.
-*   ⚔️ **Custom Enchantments**: Enchantment **Soul Bound** (didapat dari Anvil) membuat item tidak hilang saat pemain mati.
-*   🕸️ **Soul Trap (PvP)**: Perangkap jiwa untuk mencuri nyawa pemain lain yang mati di dekatnya.
-*   👑 **Ritual Boss Event**: Setiap beberapa jam, Boss raksasa (*Ancient Soul Devourer*) muncul. Kalahkan untuk mendapatkan uang & Soul Coin.
-*   💰 **Integrasi Vault & Soul Coin**: Ekonomi ganda. Uang biasa untuk toko, dan *Soul Coin* untuk hadiah event.
-*   🤖 **Discord Webhook**: Otomatis mengirim notifikasi ke channel Discord saat Boss mati atau Ritual Sukses.
-*   🌍 **Multi-Language**: Mendukung Bahasa Indonesia (`id.yml`) dan Inggris (`en.yml`).
+</div>
 
 ---
 
-## 🛠️ Persyaratan Server
+## 📖 Overview
 
-*   **Minecraft**: Paper 1.21.4 (atau versi di atasnya).
-*   **Java**: Minimal Java 21.
-*   **Plugin Wajib**: [Vault](https://www.spigotmc.org/resources/vault.34315/) & [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/).
-*   **Database**: SQLite (otomatis terbuat, tanpa instalasi tambahan).
+**ReviveMe Modern** completely overhauls the vanilla death system. Players no longer simply respawn. Instead, they have a limited number of lives. When their lives run out, their soul is cast into the **Death Realm**—a custom, eerie void dimension. To bring them back, friends must gather at a **Soul Altar** and perform a high-stakes, cinematic resurrection ritual.
 
 ---
 
-## 📥 Instalasi
+## ✨ Features
 
-1.  Download file `.jar` dari rilis terbaru.
-2.  Letakkan di folder `plugins` server.
-3.  Nyalakan server, lalu edit `plugins/ReviveMe/config.yml` sesuai selera.
-4.  Restart server.
+*   **💀 Hardcore Life System:** Players have limited lives. When they run out, they become ghosts.
+*   **🌌 The Death Realm:** A fully automated custom void dimension with eerie visual effects (No Multiverse required).
+*   **⚡ Cinematic Rituals:** Revive players using a Soul Altar and Soul Head. Features Boss Bars, soul particles, and fail conditions (moving/taking damage).
+*   **🛒 Soul Shop GUI:** A fully functional, paginated GUI shop for buying Soul Fragments, Wands, Armor, and Tools using Vault economy.
+*   **⚔️ Soul Bound Enchantment:** A custom Anvil mechanic to prevent items from dropping on death.
+*   **🕸️ Soul Trap (PvP):** Place a trap to steal the lives of players who die nearby.
+*   **👑 Global Boss Events:** Periodic bosses that reward all nearby players with money and Soul Coins.
+*   **🌍 Multi-Language:** Fully translatable with default English (`en`) and Indonesian (`id`) files.
+*   **🔗 Integrations:** Vault, PlaceholderAPI, WorldGuard, and Discord Webhooks (Rich Embeds).
+*   **💾 Database Support:** Choose between SQLite (local) or MySQL (cross-server).
 
 ---
 
-## 🎮 Command & Permission
+## 🛠️ Tech Stack & Requirements
 
-| Command | Permission | Deskripsi |
-| :--- | :--- | :--- |
-| `/revive <player>` | - | Mencoba membangkitkan pemain hantu. |
-| `/revive soulbeacon` | - | Mengirim suar jiwa (khusus pemain hantu). |
-| `/reviveme givealtar` | `revivemodern.admin` | Mendapatkan item Soul Altar. |
-| `/reviveme shop` | `revivemodern.admin` | Membuka GUI Soul Shop. |
-| `/reviveme givesoulbound` | `revivemodern.admin` | Memberi efek Soul Bound ke item di tangan. |
-| `/reviveme reload` | `revivemodern.admin` | Reload config & bahasa. |
-| `/reviveme setlives <p> <n>` | `revivemodern.admin` | Mengatur nyawa pemain. |
+*   **Server Software:** Paper 1.21.4+ (or above)
+*   **Java:** Java 21+
+*   **Dependencies:** 
+    *   [Vault](https://www.spigotmc.org/resources/vault.34315/) (Required for Economy)
+    *   [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) (Optional, for placeholders)
+    *   [WorldGuard](https://www.spigotmc.org/resources/worldguard.1177/) (Optional, for region protection)
 
-**PlaceholderAPI**:
-*   `%reviveme_lives%` (Menampilkan sisa nyawa)
-*   `%reviveme_is_ghost%` (Cek apakah pemain hantu)
+---
+
+## 🎮 Commands & Permissions
+
+### Player Commands
+| Command | Description |
+| :--- | :--- |
+| `/revive <player>` | Try to revive a ghost player. |
+| `/revive soulbeacon` | Send a beacon of light to the living world (Ghosts only). |
+
+### Admin Commands `(Permission: revivemodern.admin)`
+| Command | Description |
+| :--- | :--- |
+| `/rm givealtar` | Get a Soul Altar item. |
+| `/rm shop` | Open the player Soul Shop. |
+| `/rm adminshop` | Open the Admin Shop GUI to add items. |
+| `/rm givesoulbound` | Apply Soul Bound to the held item. |
+| `/rm revive <player>` | Forcefully revive a ghost player. |
+| `/rm setlives <player> <amount>` | Set a player's lives. |
+| `/rm pay <player> <amount>` | Transfer Soul Coins to another player. |
+| `/rm top` | View the Top 10 Soul Coin leaderboard. |
+| `/rm reload` | Reload config and languages. |
+
+### Placeholders (PlaceholderAPI)
+*   `%reviveme_lives%` - Returns the player's remaining lives.
+*   `%reviveme_soulcoins%` - Returns the player's Soul Coin balance.
+*   `%reviveme_is_ghost%` - Returns "Ghost" or "Alive".
+*   `%reviveme_top_1_name%` - Name of the richest player.
+*   `%reviveme_top_1_coins%` - Coins of the richest player.
+
+---
+
+## 📥 Installation
+
+1. Download the latest `.jar` from the [Releases](https://github.com/nansxxx/ReviveMe/releases) page.
+2. Drop the `.jar` file into your server's `plugins` folder.
+3. Ensure you have **Vault** and an Economy plugin installed.
+4. Start the server. (The Death Realm dimension will be generated automatically!)
+5. Configure your settings in `plugins/ReviveMe/config.yml` and language files in `plugins/ReviveMe/lang/`.
 
 ---
 
 ## 📸 Screenshots
 
-*(Tambahkan screenshot-mu di sini nanti! Kamu bisa upload gambar ke GitHub, lalu paste link-nya).*
-*   Screenshot Ritual Boss Bar
-*   Screenshot Alam Baka (Death Dimension)
-*   Screenshot Soul Shop GUI
+*(Add your screenshots here! Upload images to GitHub and paste the links below)*
+*   [Soul Altar Ritual]()
+*   [Death Realm & Particles]()
+*   [Soul Shop GUI]()
 
 ---
 
-## 📜 Lisensi
+## 📜 License
 
-Plugin ini dilisensikan di bawah [MIT License](LICENSE).
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
-*Dibuat dengan ❤️ oleh nanskieee*
+<div align="center">
+  <i>Developed with ❤️ by <a href="https://github.com/nansxxx">Nansxxx</a></i>
+</div>
