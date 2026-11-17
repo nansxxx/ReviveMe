@@ -13,7 +13,7 @@ general:
   language: 'en'
 
   # Jumlah nyawa default saat pemain pertama kali bergabung
-  default-lives: 3
+  default-lives: 2
 
 # ---------------------------------------------------------
 # PENGATURAN RITUAL (RITUAL)
@@ -44,25 +44,20 @@ economy:
   # Biaya yang harus dibayar pemain untuk melakukan ritual
   # Set ke 0 jika server tidak menggunakan ekonomi
   ritual-cost: 5000
+  # Penalti Soul Coin saat mati (dalam persen)
+  death-penalty-percent: 10
 
 # ---------------------------------------------------------
 # PENGATURAN DIMENSI KEMATIAN (DEATH DIMENSION)
 # ---------------------------------------------------------
 death-dimension:
-  # Apakah fitur dimensi kematian diaktifkan?
-  # Jika false, hantu akan tetap berada di dunia asli
   enabled: true
-
-  # Nama dunia (biarkan default jika tidak yakin)
   world-name: "death_realm"
-
-  # Waktu di dimensi kematian (0 = Pagi, 6000 = Siang, 12000 = Sore, 18000 = Malam)
-  # Disarankan 18000 agar terasa menyeramkan
   time: 18000
-
-  # Apakah cuaca di dimensi kematian selalu cerah?
   disable-weather: true
-
+  # Waktu tunggu maksimal di Alam Baka (dalam detik)
+  # 240 detik = 4 menit
+  max-ghost-time: 240
 # ---------------------------------------------------------
 # PENGATURAN VISUAL (VISUAL EFFECTS)
 # ---------------------------------------------------------
@@ -82,22 +77,47 @@ shop:
       material: AMETHYST_SHARD
       price: 1000.0
       custom-model-data: 1001
+      display-name: "Soul Fragment"
     soul_altar:
       material: LODESTONE
       price: 50000.0
       custom-model-data: 1003
+      display-name: "Soul Altar"
     revive_wand:
       material: BLAZE_ROD
       price: 15000.0
       custom-model-data: 1004
-    soul_armor:
+      display-name: "Revive Wand"
+    soul_helmet:
+      material: NETHERITE_HELMET
+      price: 15000.0
+      custom-model-data: 1008
+      display-name: "Soul Helmet"
+    soul_chestplate:
       material: NETHERITE_CHESTPLATE
       price: 25000.0
       custom-model-data: 1005
-    soul_bound_book:
-      material: ENCHANTED_BOOK
-      price: 30000.0
-      custom-model-data: 1006
+      display-name: "Soul Chestplate"
+    soul_leggings:
+      material: NETHERITE_LEGGINGS
+      price: 20000.0
+      custom-model-data: 1009
+      display-name: "Soul Leggings"
+    soul_boots:
+      material: NETHERITE_BOOTS
+      price: 15000.0
+      custom-model-data: 1010
+      display-name: "Soul Boots"
+    soul_sword:
+      material: NETHERITE_SWORD
+      price: 35000.0
+      custom-model-data: 1011
+      display-name: "Soul Sword"
+    soul_pickaxe:
+      material: NETHERITE_PICKAXE
+      price: 40000.0
+      custom-model-data: 1012
+      display-name: "Soul Pickaxe"
 # ---------------------------------------------------------
 # EVENT BOSS (RITUAL BOSS)
 # ---------------------------------------------------------
@@ -132,3 +152,15 @@ soul-currency:
   reward-per-revive: 5
   # Berapa Soul Coin yang didapat saat membunuh Soul Boss?
   reward-per-boss: 50
+# ---------------------------------------------------------
+# DATABASE SETTINGS (SQLite / MySQL)
+# ---------------------------------------------------------
+database:
+  # Pilih 'sqlite' atau 'mysql'
+  type: "sqlite"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "reviveme"
+    username: "root"
+    password: ""
