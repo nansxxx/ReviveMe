@@ -1,4 +1,4 @@
-prefix: "<dark_gray>[<dark_red>reviveme</dark_red>]</dark_gray> <gray>»</gray> "
+prefix: "<dark_gray>[<dark_red>ReviveMe</dark_red>]</dark_gray> <gray>»</gray> "
 no-lives: "<red>Your lives are depleted! You are now a ghost.</red>"
 ghost-welcome: "<gray>Welcome to the Death Realm. Find a Soul Altar so your friend can revive you.</gray>"
 ritual-start: "<yellow>The resurrection ritual has begun! Do not move...</yellow>"
@@ -34,3 +34,104 @@ soulbound-applied: "<green>Item successfully enchanted with Soul Bound!</green>"
 soulbound-already: "<red>This item already has Soul Bound!</red>"
 soul-trap-success: "<green>You stole 1 life from <victim>!</green>"
 soul-trap-victim: "<red>Your soul was stolen by <owner>'s Soul Trap!</red>"
+sacrifice-success: "<red>A part of your life was sacrificed for this ritual.</red>"
+refund-success: "<green>Your money was refunded because the ritual failed: $<cost></green>"
+not-enough-lives-sacrifice: "<red>You don't have enough lives to sacrifice!</red>"
+need-item-in-hand: "<red>Hold an item in your hand first!</red>"
+item-added-to-shop: "<green>Item successfully added to the shop database!</green>"
+edit-feature-coming-soon: "<yellow>Edit Lore feature is coming soon!</yellow>"
+soulcoin-pay-success: "<green>You sent <amount> Soul Coins to <target>!</green>"
+soulcoin-received: "<green>You received <amount> Soul Coins from <sender>!</green>"
+not-enough-soulcoins: "<red>You don't have enough Soul Coins!</red>"
+top-header: "<gold>=== Top 10 Soul Coin Holders ===</gold>"
+top-format: "<yellow><rank>. <white><player></white> - <gold><coins> Coins</gold></yellow>"
+admin-revived-player: "<green>You have revived <player>!</green>"
+admin-revived-target: "<green>You have been revived by an Admin!</green>"
+# Shop GUI
+shop-title: "<dark_gray>Soul Shop</dark_gray>"
+shop-price: "<gray>Price: <gold>$<price></gold></gray>"
+shop-click-buy: "<yellow>▶ Click to purchase</yellow>"
+shop-close: "<red>Close</red>"
+shop-prev: "<yellow>« Previous Page</yellow>"
+shop-next: "<yellow>Next Page »</yellow>"
+
+# Admin Shop GUI
+adminshop-title: "<dark_red>Admin Shop Manager</dark_red>"
+adminshop-add-name: "<green>+ Add Item</green>"
+adminshop-add-lore1: "<gray>Hold an item in your hand, then click this.</gray>"
+adminshop-add-lore2: "<gray>Default price: $1000</gray>"
+adminshop-edit-name: "<yellow>✎ Edit Shop Item</yellow>"
+adminshop-edit-lore1: "<gray>Change Name, Lore, and Price.</gray>"
+adminshop-edit-lore2: "<gray>Click to view item list.</gray>"
+adminshop-preview-name: "<light_purple>👁 Preview Shop</light_purple>"
+adminshop-preview-lore: "<gray>View shop from a player's perspective.</gray>"
+# ==========================================
+# ITEM TRANSLATIONS (ENGLISH)
+# ==========================================
+item:
+  soul_fragment:
+    name: "<light_purple>Soul Fragment</light_purple>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>A piece of a lost soul.</gray>"
+    lore3: "<yellow>Use at a Soul Altar to revive.</yellow>"
+
+  soul_head:
+    name: "<dark_purple>Soul Head</dark_purple>"
+    lore1: "<gray>Bound to: <white><player></white></gray>"
+    lore2: "<yellow>Hold this near an Altar to revive them.</yellow>"
+
+  soul_altar:
+    name: "<gold>Soul Altar</gold>"
+    lore1: "<gray>An ancient monolith of souls.</gray>"
+    lore2: "<yellow>Place it on the ground to activate.</yellow>"
+
+  revive_wand:
+    name: "<light_purple>Revive Wand</light_purple>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>A wand imbued with ancient magic.</gray>"
+    lore3: "<red>Single use. Right-click a ghost.</red>"
+
+  soul_armor:
+    name: "<dark_purple>Soul Armor</dark_purple>"
+    lore1: "<gray>Crafted from pure souls.</gray>"
+    lore2: "<yellow>Grants extra protection in the Death Realm.</yellow>"
+
+  soul_trap:
+    name: "<dark_red>Soul Trap</dark_red>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>An ancient soul-devouring trap.</gray>"
+    lore3: "<red>Steals 1 life from players who die nearby.</red>"
+
+  soul_bound_book:
+    name: "<light_purple>Soul Bound Book</light_purple>"
+    lore1: "<dark_gray>---------------------</dark_gray>"
+    lore2: "<gray>Combine with an item in an Anvil.</gray>"
+    lore3: "<yellow>Prevents the item from dropping on death.</yellow>"
+
+  soul_leggings:
+    name: "<dark_purple>Soul Leggings</dark_purple>"
+    lore1: "<gray>Forged from the essence of lost souls.</gray>"
+    lore2: "<yellow>Grants protection in the Death Realm.</yellow>"
+
+  soul_boots:
+    name: "<dark_purple>Soul Boots</dark_purple>"
+    lore1: "<gray>Forged from the essence of lost souls.</gray>"
+    lore2: "<yellow>Grants protection in the Death Realm.</yellow>"
+
+  soul_pickaxe:
+    name: "<dark_purple>Soul Pickaxe</dark_purple>"
+    lore1: "<gray>Can mine a 3x3 area.</gray>"
+    lore2: "<yellow>Perfect for clearing large areas.</yellow>"
+
+  soul_sword:
+    name: "<dark_purple>Soul Sword</dark_purple>"
+    lore1: "<gray>A blade that hungers for souls.</gray>"
+    lore2: "<yellow>Deals bonus damage to the undead.</yellow>"
+# Death Animation Titles
+title-death-main: "<dark_red><bold>YOU DIED</bold></dark_red>"
+title-death-sub: "<gray>Your soul is fading away...</gray>"
+title-revive-main: "<green><bold>RESURRECTED</bold></green>"
+title-revive-sub: "<gray>Welcome back to the living.</gray>"
+ghost-time-left: "<red>Time left: <yellow><time> seconds</yellow> before your soul fades!</red>"
+ghost-time-out: "<dark_red>Your soul has faded from the Death Realm! You were not revived.</dark_red>"
+ghost-cant-teleport: "<red>As a ghost, you cannot use teleportation!</red>"
